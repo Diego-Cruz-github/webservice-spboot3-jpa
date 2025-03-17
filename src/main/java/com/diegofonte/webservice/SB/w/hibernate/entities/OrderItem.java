@@ -66,6 +66,9 @@ public class OrderItem implements Serializable {
 		this.price = price;
 	}
 	
+	public Double getSubTotal() {     // get ^ json
+		return price * quantity;
+	}
 	
 
 	@Override

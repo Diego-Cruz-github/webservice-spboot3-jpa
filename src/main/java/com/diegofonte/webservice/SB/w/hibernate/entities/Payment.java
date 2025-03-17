@@ -3,6 +3,8 @@ package com.diegofonte.webservice.SB.w.hibernate.entities;
 import java.io.Serializable;
 import java.time.Instant;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,6 +23,7 @@ public class Payment implements Serializable {
 	private Long Id;
 	private Instant moment;
 	
+	@JsonIgnore
 	@OneToOne    //classe dependente de Order
 	@MapsId    
 	private Order order;
