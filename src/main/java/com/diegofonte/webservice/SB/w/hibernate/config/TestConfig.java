@@ -1,9 +1,9 @@
 package com.diegofonte.webservice.SB.w.hibernate.config;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Profile;
 import com.diegofonte.webservice.SB.w.hibernate.entities.Category;
 import com.diegofonte.webservice.SB.w.hibernate.entities.Order;
 import com.diegofonte.webservice.SB.w.hibernate.entities.OrderItem;
+import com.diegofonte.webservice.SB.w.hibernate.entities.Payment;
 import com.diegofonte.webservice.SB.w.hibernate.entities.Product;
 import com.diegofonte.webservice.SB.w.hibernate.entities.User;
 import com.diegofonte.webservice.SB.w.hibernate.entities.enums.OrderStatus;
@@ -111,5 +112,10 @@ public class TestConfig implements CommandLineRunner {
         orderItems.add(oi4);
 
         orderItemRepository.saveAll(orderItems);
+        
+        Payment pay1 = new Payment(null, Instant.parse("2019-06-20T21:53:07Z"), o1);
+        o1.setPayment(pay1);
+        
+        orderRepository.save(o1);
     }
 }
