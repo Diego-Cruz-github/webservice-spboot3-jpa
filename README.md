@@ -39,18 +39,13 @@ Este é um projeto de backend Spring Boot Java que implementa um modelo de domí
 
 - ## Como executar o projeto
 
-1.  **Requisitos:**
-
-    * Java 11 ou superior
-    * Maven
-
-2.  **Clone o repositório:**
+1.  **Clone o repositório:**
 
     ```bash
     git clone [https://github.com/Diego-Cruz-github/webservice-spboot3-jpa.git](https://github.com/Diego-Cruz-github/webservice-spboot3-jpa.git)
     ```
 
-3.  **Navegue até o diretório do projeto:**
+2.  **Navegue até o diretório do projeto:**
 
     ```bash
     cd springboot-jpa-hibernate-api
@@ -58,20 +53,20 @@ Este é um projeto de backend Spring Boot Java que implementa um modelo de domí
 
     * **Observação:** Substitua `springboot-jpa-hibernate-api` pelo nome correto da pasta do seu projeto, caso seja diferente.
 
-4.  **Execute o projeto com Maven:**
+3.  **Execute o projeto com Maven:**
 
     ```bash
     ./mvnw spring-boot:run
     ```
 
-5.  **A API estará disponível em `http://localhost:8080`.**
+4.  **A API estará disponível em `http://localhost:8080`.**
 
-6.  **Banco de Dados:**
+5.  **Banco de Dados:**
 
     * A aplicação utiliza o banco de dados H2 para testes em memória.
     * **Importante:** Em um ambiente de produção, um banco de dados externo (como PostgreSQL, MySQL, etc.) deve ser configurado no arquivo `application.properties` ou `application.yml`. Configure as propriedades de conexão adequadamente.
 
-7.  **Testes com Postman:**
+6.  **Testes com Postman:**
 
     * Utilize o Postman para testar os endpoints da API.
     * Importe a coleção do Postman (se disponível) para facilitar os testes.
