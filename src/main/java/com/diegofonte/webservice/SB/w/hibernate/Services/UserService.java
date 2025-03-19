@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.diegofonte.webservice.SB.w.hibernate.Services.exceptions.ResourceNotFoundException;
 import com.diegofonte.webservice.SB.w.hibernate.entities.User;
 import com.diegofonte.webservice.SB.w.hibernate.repositories.UserRepository;
 
@@ -21,7 +22,7 @@ public class UserService {
 	
 	public User findById(Long id) {
 		Optional<User> obj = repository.findById(id);
-		return obj.get();
+		return obj.orElseThrow(() -> new ResourceNotFoundException(id));
 	}
 	
 	public User insert (User obj) {
