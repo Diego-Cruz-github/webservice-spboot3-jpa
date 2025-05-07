@@ -101,8 +101,7 @@ Este é um projeto de backend Spring Boot Java que implementa um modelo de domí
     * Exemplo de resposta: `{"id": 1, "userId": 1, "items": [{"productId": 1, "quantity": 2}], "status": "PENDING"}`
 
 
-# Autor
-Diego Fonte Boa Cruz
-
-www.linkedin.com/in/diegof90
+## 👨‍💻 Autor
+**Diego Fonte Boa Cruz**  
+📌 [LinkedIn](https://www.linkedin.com/in/diegof90)
 
