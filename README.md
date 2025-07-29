@@ -76,9 +76,6 @@ Este é um projeto de backend Spring Boot Java que implementa um modelo de domí
 
 * **Arquivo `application.properties` ou `application.yml`:**
     * Verifique o arquivo de configuração para quaisquer propriedades adicionais que precisem ser configuradas, como variáveis de ambiente ou configurações de segurança.
-
-* **Coleção do Postman:**
-    * Se você tiver uma coleção do Postman pronta para uso, considere adicionar um link para ela no README para facilitar a vida de quem for testar a API.
  
       ## Endpoints da API
 
