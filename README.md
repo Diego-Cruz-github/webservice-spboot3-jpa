@@ -102,6 +102,5 @@ Este é um projeto de backend Spring Boot Java que implementa um modelo de domí
 
 
 ## 👨‍💻 Autor
-**Diego Fonte**  
-📌 [LinkedIn](https://www.linkedin.com/in/diegof90)
+**Diego Fonte** 
 
